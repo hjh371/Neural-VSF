@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Safe Leaf Manipulation for Accurate Shape and Pose Estimation of Occluded Fruit">
-  <meta name="keywords" content="Agriculture Robots">
+        content="Estimating High-Resolution Neural Stiffness Fields using Visuotactile Sensors">
+  <meta name="keywords" content="Tactile Perception">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Safe Leaf Manipulation for Accurate Shape and Pose Estimation of Occluded Fruit</title>
 
@@ -112,15 +112,13 @@
           </div> -->
 
           <div class="is-size-5 publication-authors">
+            <span class="author-block">Jiaheng Han<sup>∗,1</sup>,</span>
             <span class="author-block">Shaoxiong Yao<sup>∗,1</sup>,</span>
-            <span class="author-block">Sicong Pan<sup>∗,2</sup>,</span>
-            <span class="author-block">Maren Bennewitz<sup>2</sup>,</span>
             <span class="author-block">Kris Hauser<sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Illinois at Urbana-Champaign, IL, USA.</span>
-            <span class="author-block"><sup>2</sup>Humanoid Robots Lab, University of Bonn, Germany.</span>
             <span class="author-block"><sup>∗</sup>These authors contributed equally to this work.</span>
             <!-- <span class="author-block">S. Yao and K. Hauser are with the University of Illinois at Urbana-Champaign, IL, USA.</span>
             <span class="author-block">S. Pan and M. Bennewitz are with the Humanoid Robots Lab, University of Bonn, Germany.</span>
@@ -192,7 +190,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -205,7 +203,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- <section class="hero is-light is-small">
@@ -274,11 +272,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Fruit monitoring plays an important role in crop management, and rising global fruit consumption combined with labor shortages necessitates automated monitoring with robots.
-            However, occlusions from plant foliage often hinder accurate shape and pose estimation. 
-            Therefore, we propose an active fruit shape and pose estimation method that physically manipulates occluding leaves to reveal hidden fruits.  
-            This paper introduces a framework that plans robot actions to maximize visibility and minimize leaf damage. We developed a novel scene-consistent shape completion technique to improve fruit estimation under heavy occlusion and utilize a perception-driven deformation graph model to predict leaf deformation during planning.
-            Experiments on artificial and real sweet pepper plants demonstrate that our method enables robots to safely move leaves aside, exposing fruits for accurate shape and pose estimation, outperforming baseline methods.
+            High-resolution visuotactile sensors provide detailed contact information that is promising to infer the physical properties of objects in contact.
+            This paper introduces a novel technique for high-resolution stiffness estimation of heterogeneous deformable objects using the Punyo bubble sensor.
+            We developed an observation model for dense contact forces to estimate object stiffness using a visuotactile sensor and a dense force estimator.
+            Additionally, we propose a neural volumetric stiffness field (VSF) formulation that represents stiffness as a continuous function, which allows dynamic point sampling at visuotactile sensor observation resolution. 
+            The neural VSF significantly reduces artifacts commonly associated with traditional point-based methods, particularly in stiff inclusion estimation and heterogeneous stiffness estimation. 
+            We further apply our method in a blind localization task, where objects within opaque bags are accurately modeled and localized, demonstrating the superior performance of neural VSF compared to existing techniques.
           </p>
         </div>
       </div>
